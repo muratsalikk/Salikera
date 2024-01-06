@@ -1,4 +1,26 @@
-INSERT INTO "STATUS" (ID, VERSION, NAME) VALUES
+insert into CONFIGURATION_CATEGORY  (ID, VERSION,CATEGORY_NAME)
+(1,1,'General'),
+(2,1,'Memory Management'),
+(3,1,'Spilling'),
+(4,1,'Exchange'),
+(5,1,'Task'),
+(6,1,'Node Scheduler'),
+(7,1,'Optimizer'),
+(8,1,'Miscellaneous');
+
+insert into CONFIGURATION (ID, VERSION, CONFIGURATION_CATEGORY_ID, CONFIGURATION_NAME, , C_VALUE, C_VALUE_ALLOWED, C_VALUE_DEFAULT, C_VALUE_TYPE, TOOL_TIP, TIME_STAMP)
+(9,1,1,'installation-directory', 'Path', '', '', '/hdlog/Presto/presto_0.283', 'Installation directory',0),
+(10,1,1,'data-directory', 'Path', '', '', '/hdlog/Presto/data', 'Data directory for logs and spilling',0),
+(11,1,1,'installation-directory', 'Path', '', '', '/hdlog/Presto/presto_0.283', 'Installation directory',0),
+(12,1,1,'installation-directory', 'Path', '', '', '/hdlog/Presto/presto_0.283', 'Installation directory',0),
+
+
+
+insert into CONFIGURATION  (ID, IS_COORDINATOR, VERSION, CPU_CORES, CPU_USAGE_PRESTO,  LAST_UPDATE_TIME, MEMORY, MEMORY_USAGE, MEMORY_USAGE_PRESTO, PRESTO_DATA_DISK_USAGE, PRESTO_DATA_DISK_USAGE_PRESTO, THREAD_COUNT, THREAD_COUNT_PRESTO, HOST_NAME, IP, JAVA_VERSION, NODE_ID, OSVERSION, PRESTO_BIN_DIRECTORY, PRESTO_DATA_DIRECTORY, PRESTO_VERSION, STATUS, USER_NAME, ) values
+(110)
+
+
+/* INSERT INTO "STATUS" (ID, VERSION, NAME) VALUES
 (1, 1, 'Imported lead'),
 (2, 1, 'Not contacted'),
 (3, 1, 'Contacted'),
@@ -9,7 +31,7 @@ INSERT INTO "COMPANY" (ID, VERSION, NAME) VALUES
 (7, 1, 'Avaya Inc.'),
 (8, 1, 'Laboratory Corporation of America Holdings'),
 (9, 1, 'AutoZone, Inc.'),
-(10, 1, 'Linens ''n Things Inc.');   
+(10, 1, 'Linens ''n Things Inc.');
 INSERT INTO "CONTACT" (ID, VERSION, EMAIL,FIRST_NAME,LAST_NAME,COMPANY_ID,STATUS_ID) VALUES
 (11, 1, 'eula.lane@jigrormo.ye', 'Eula', 'Lane', 8, 1),
 (12, 1, 'barry.rodriquez@zun.mm', 'Barry', 'Rodriquez', 7, 5),
@@ -35,7 +57,7 @@ INSERT INTO "CONTACT" (ID, VERSION, EMAIL,FIRST_NAME,LAST_NAME,COMPANY_ID,STATUS
 (32, 1, 'bobby.pearson@ib.kg', 'Bobby', 'Pearson', 9, 1),
 (33, 1, 'larry.ciappi@ba.lk', 'Larry', 'Ciappi', 10, 2),
 (34, 1, 'ronnie.salucci@tohhij.lv', 'Ronnie', 'Salucci', 9, 1),
-(35, 1, 'walter.grossi@tuvo.sa', 'Walter', 'Grossi', 9, 1);      
+(35, 1, 'walter.grossi@tuvo.sa', 'Walter', 'Grossi', 9, 1);
 INSERT INTO "CONTACT" (ID, VERSION, EMAIL,FIRST_NAME,LAST_NAME,COMPANY_ID,STATUS_ID) VALUES
 (36, 1, 'frances.koopmans@foga.tw', 'Frances', 'Koopmans', 7, 5),
 (37, 1, 'frances.fujimoto@uswuzzub.jp', 'Frances', 'Fujimoto', 6, 5),
@@ -61,4 +83,4 @@ INSERT INTO "CONTACT" (ID, VERSION, EMAIL,FIRST_NAME,LAST_NAME,COMPANY_ID,STATUS
 (57, 1, 'mattie.graham@ispaviw.gt', 'Mattie', 'Graham', 7, 2),
 (58, 1, 'bryan.shaw@ha.ee', 'Bryan', 'Shaw', 9, 1),
 (59, 1, 'essie.adams@iliat.cw', 'Essie', 'Adams', 8, 5),
-(60, 1, 'gary.osborne@do.ga', 'Gary', 'Osborne', 7, 5);
+(60, 1, 'gary.osborne@do.ga', 'Gary', 'Osborne', 7, 5); */

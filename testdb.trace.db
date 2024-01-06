@@ -1,0 +1,9 @@
+2023-10-24 20:53:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SERVER" not found (this database is empty); SQL statement:
+select count(*) from server s1_0 [42104-214]
+2023-10-24 20:55:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SERVER" not found (this database is empty); SQL statement:
+select count(*) from server s1_0 [42104-214]
+2023-10-24 20:56:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SERVER" not found (this database is empty); SQL statement:
+select count(*) from server s1_0 [42104-214]
